@@ -1,8 +1,7 @@
 import java.util.*;
 import java.io.*;
 public class Ejercicios {
-	private NodoInt primero;
-	ListaInt lista=new ListaInt();
+	
 	///EJERCICIO.01 
 	public int redondear(int vuelto, int denom,int digitosAcortar){
 		int ultimoDigito = cortarNumero(vuelto, digitosAcortar);
@@ -11,6 +10,8 @@ public class Ejercicios {
 	public int calcularRedondeo(int vuelto,int ultimoDigito,int denom) {
 		return vuelto + (denom-ultimoDigito);
 	}
+	
+	
 	///EJERCICIO.02
 	public int redondearConLista(int vuelto,ArrayList<Integer> denominaciones) {
 		 
@@ -45,7 +46,7 @@ public class Ejercicios {
 		
 		ArrayList<Integer> nueva=new ArrayList<Integer>();
 		
-		String sCadena;
+		String sCadena;  // falta cambios, quitar
 		while ((sCadena = bf.readLine())!=null) {
 			String[] arreglo = sCadena.split(" ");
 			for(int i=0;i<arreglo.length;i++) {
@@ -57,5 +58,17 @@ public class Ejercicios {
 		return nueva;
 		
 	}
+
+	///EJERCICIO.04
+	public int redondeoPorNivel(int vuelto) {
+		
+		return 0;
+	}
 	
 }
+//levantar archivo, pasarlo  a lista, comparar nivel y redondear
+	
+	//EJERCICO.05
+	//levanto archivo con valor y cantidad , paso a lista 
+	// si tiene mas de 100 monedas lo redondea
+	//si tengo menos de 100 monedas lo salteo , luego redondear 

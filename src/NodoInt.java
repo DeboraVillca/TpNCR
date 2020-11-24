@@ -1,23 +1,28 @@
 
 public class NodoInt {
 
-	public int elemento;
+	public int valor;
+	public String nivel;
 	public NodoInt siguiente;
 
 	public NodoInt() {
-		// TODO Auto-generated constructor stub
 	}
-
 	public NodoInt(int x) {
-		// TODO Auto-generated constructor stub
+	}
+public String getNivel() {
+		return nivel;
 	}
 
-	public int getElemento() {
-		return elemento;
+	public void setNivel(String nivel) {
+		this.nivel = nivel;
 	}
 
-	public void setElemento(int elemento) {
-		this.elemento = elemento;
+	public int getValor() {
+		return valor;
+	}
+
+	public void setValor(int valor) {
+		this.valor = valor;
 	}
 
 	public NodoInt getSiguiente() {

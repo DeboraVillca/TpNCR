@@ -5,7 +5,7 @@ public class Main {
 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
-	Ejercicios e=new Ejercicios();
+	//Ejercicios e=new Ejercicios();
 //		System.out.println(e.redondear(124,5));
 //	
 //	ArrayList<Integer> lista= new ArrayList<Integer>();
@@ -18,11 +18,17 @@ public class Main {
 //		lista.add(100);
 //		System.out.println("Denominaciones: "+lista);
 //		System.out.println(e.redondearConLista(135, lista));
-
-		ArrayList<Integer> nuevalista=e.leerFichero("C:\\Users\\Daniel\\Documents\\TrabajoPracticoNCR\\src\\Archivo.txt");
-		System.out.println(" lista de fichero "+nuevalista);
-		System.out.println(e.redondearConLista(127, nuevalista));
-
+		
+		ILectorArchivo e=new LectorArchivoNivel();
+		
+		List<IDenominacion> nuevalista=e.leerArchivo("C:\\Users\\Daniel\\Documents\\TpNCR\\src\\ArchivoConNiveles.txt");
+		for (IDenominacion denominacion : nuevalista) {
+			denominacion.imprimir();
+		}
+		
+		
+		
+		
 		
 	}
 
