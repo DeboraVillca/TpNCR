@@ -5,8 +5,13 @@ public class Denominacion {
 	public Denominacion(int valor) {
 		this.valor = valor;
 	}
-	protected int getValor() {
+	public int getValor() {
 		return valor;
 	}
-	
+
+		@Override
+		public String toString() 
+		{
+			return "" + valor;
+		}
 }

@@ -58,17 +58,6 @@ public class Ejercicios {
 		return nueva;
 		
 	}
-
-	///EJERCICIO.04
-	public int redondeoPorNivel(int vuelto) {
-		
-		return 0;
-	}
 	
 }
-//levantar archivo, pasarlo  a lista, comparar nivel y redondear
-	
-	//EJERCICO.05
-	//levanto archivo con valor y cantidad , paso a lista 
-	// si tiene mas de 100 monedas lo redondea
-	//si tengo menos de 100 monedas lo salteo , luego redondear 
+

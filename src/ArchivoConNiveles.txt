@@ -1,1 +1,0 @@
-10 normal;20 bajo;25 normal;30 normal;35 bajo;40 normal 
