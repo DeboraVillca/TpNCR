@@ -18,4 +18,8 @@ public class DenominacionConMonedas extends Denominacion
 	{
 		return "" + valor + " " + monedas;
 	}
+
+	public void setMonedas(int monedas) {
+		this.monedas = monedas;
+	}
 }
